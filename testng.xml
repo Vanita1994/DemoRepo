@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <!-- <listener class-name="com.freecrm.qa.WebDriverEventHandler"/>-->
+        <listener class-name="com.saucelabs.qa.Listeners.ExtentReporterNG"/>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="C:/Users/Amitkumar Patel/OneDrive/Desktop/TestFunda/PageObjectModelConcept">
+
+        <classes>
+            <class name="com.saucelabs.qa.Testclasses.LoginTest">
+                <methods><include name="verifyloginbutton"/></methods>
+            </class>
+
+            <class name="com.saucelabs.qa.Testclasses.HomeTest">
+            <methods><include name="verifyhomepageTitle"/></methods>
+        </class>
+        </classes>
+    </test>
+</suite>
